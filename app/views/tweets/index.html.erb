@@ -1,0 +1,8 @@
+<div id="tweets-index">
+  <div class="tweets">
+    <% @tweets.each do |tweet| %>
+      <%= render 'tweet', :tweet => tweet %>
+      <%= link_to 'show', tweet %>
+    <% end %>
+  </div>
+</div>
